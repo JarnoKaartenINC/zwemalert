@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blauwalg Radar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Blauwalg Radar</h1>
+       
+        <input type="text" id="searchBar" placeholder="Zoek naar meren, rivieren of zwemplekken...">
+    </header>
+
+    <!-- Hoofdsectie: Actuele Status -->
+    <section class="status">
+        <div class="map-container">
+            <div id="map">
+			<img src="jpegje_vr_mike.JPG" alt="Map" width="540" height="310">
+			</div>
+            <div class="legend">
+                <p><span class="color-box green"></span> Geen blauwalg</p>
+                <p><span class="color-box orange"></span> Waarschuwing</p>
+                <p><span class="color-box red"></span> Blauwalg</p>
+            </div>
+        </div>
+        <div class="map-options">
+            <button class="map-layer">Actuele meldingen</button>
+            <button class="map-layer">Waterkwaliteit</button>
+            <button class="map-layer">Historische data</button>
+        </div>
+    </section>
+
+    <!-- Overzicht in Lijstvorm -->
+    <section class="overview">
+        <h2>Nabijgelegen Locaties</h2>
+        <ul id="locationList">
+            <ul id="locationList">
+    <li>
+        <span class="location-name">Broekwegwetering, Leyens</span>
+        <span class="status-label green">Geen blauwalg</span>
+        <span class="distance">1,4 km</span>
+        <a href="details1.html" class="details-btn">Details</a>
+    </li>
+    <li>
+        <span class="location-name">Het lange land, Leyens</span>
+        <span class="status-label orange">Waarschuwing</span>
+        <span class="distance">1,7 km</span>
+        <a href="details2.html" class="details-btn">Details</a>
+    </li>
+    <li>
+        <span class="location-name">Hondenstrandje, Noord Aa</span>
+        <span class="status-label orange">Waarschuwing</span>
+        <span class="distance">1,6 km</span>
+        <a href="details2.html" class="details-btn">Details</a>
+    </li>
+    <li>
+        <span class="location-name">Naaktstrand, Noord Aa</span>
+        <span class="status-label orange">Waarschuwing</span>
+        <span class="distance">2,3 km</span>
+        <a href="details2.html" class="details-btn">Details</a>
+    </li>
+    <li>
+        <span class="location-name">Speelvijver, Noord Aa</span>
+        <span class="status-label red">Blauwalg</span>
+        <span class="distance">2,4 km</span>
+        <a href="details3.html" class="details-btn">Details</a>
+    </li>
+    <li>
+        <span class="location-name">Zwemstrand, Noord Aa</span>
+        <span class="status-label red">Blauwalg</span>
+        <span class="distance">2,5 km</span>
+        <a href="details3.html" class="details-btn">Details</a>
+    </li>
+</ul>
+        </ul>
+    </section>
+
+    <!-- Onderste Sectie: Informatief en Nieuws -->
+    <section class="info-news">
+        <h2>Informatie en Nieuws</h2>
+        <div class="warnings">
+            <h3>Waarschuwingen</h3>
+            <p>Nieuwe melding: Blauwalg gesignaleerd bij Kralingse Plas.</p>
+        </div>
+        <div class="weather-impact">
+            <h3>Weerinvloed</h3>
+            <p>Het warme weer van deze week verhoogt de kans op blauwalg.</p>
+        </div>
+        <div class="tips">
+            <h3>Tips</h3>
+            <p>Vermijd contact met water waar blauwalg zichtbaar is. Spoel direct af na zwemmen.</p>
+        </div>
+    </section>
+
+    <!-- Navigatiebalk -->
+    <nav class="bottom-nav">
+        <button class="nav-btn" onclick="navigateTo('index.html')">Home</button>
+        <button class="nav-btn" onclick="navigateTo('kaart.html')">Kaart</button>
+        <button class="nav-btn" onclick="navigateTo('informatie.html')">Informatie</button>
+        <button class="nav-btn" onclick="navigateTo('meld.html')">Meld Blauwalgen</button>
+    </nav>
+
+    <script src="script.js"></script>
+	
+	<script>
+	
+	 // Functie om naar een andere pagina te navigeren
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+	
+	</script>
+</body>
+</html>

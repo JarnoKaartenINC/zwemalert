@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaartweergave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        
+        <h1>Kaartweergave</h1>
+    </header>
+
+    <!-- Hoofdsectie: Volledig vergrote kaart -->
+    <main class="map-page">
+        <div id="full-map">
+		<img src="jpegje_vr_mike.JPG" alt="Map" >
+		</div>
+    </main>
+
+    <!-- Navigatiebalk -->
+    <nav class="bottom-nav">
+        <button class="nav-btn" onclick="navigateTo('index.html')">Home</button>
+        <button class="nav-btn" onclick="navigateTo('kaart.html')">Kaart</button>
+        <button class="nav-btn" onclick="navigateTo('informatie.html')">Informatie</button>
+        <button class="nav-btn" onclick="navigateTo('meld.html')">Meld Blauwalgen</button>
+    </nav>
+
+    <script>
+        function goBack() {
+            window.location.href = 'index.html';
+        }
+		
+		 // Functie om naar een andere pagina te navigeren
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+		
+		 // Functie om naar een andere pagina te navigeren
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+		
+    </script>
+</body>
+</html>

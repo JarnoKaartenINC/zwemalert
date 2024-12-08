@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f9fc;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #007acc;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .back-btn {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.header h1 {
+    margin: 5px 0;
+}
+
+.header .distance {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Locatiekaart */
+.map-section {
+    padding: 15px;
+    text-align: center;
+}
+
+#map {
+    height: 200px;
+    background: url('map-placeholder.png') center/cover no-repeat;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.full-map-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Blauwalg Status */
+.status {
+    padding: 15px;
+    background-color: #ffe5e5;
+    border: 1px solid #ffcccc;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.status h2 {
+    color: red;
+}
+
+.status .status-description {
+    margin: 10px 0;
+}
+
+.status .last-updated {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Details */
+.details {
+    padding: 15px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.details h3 {
+    margin-top: 0;
+}
+
+.details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.details ul li {
+    margin: 5px 0;
+}
+
+/* Foto's en Historie */
+.photos-history {
+    padding: 15px;
+}
+
+.photo-gallery img {
+    width: 30%;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.historical-data img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Actieopties */
+.actions {
+    padding: 15px;
+    text-align: center;
+}
+
+.action-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
